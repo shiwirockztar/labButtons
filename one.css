@@ -1,0 +1,121 @@
+/*concept by CSS Custom Checkbox Design | Html CSS Tutorial @Online Tutorials*/
+
+
+/*label necesario por que es el que se toca para el cambio*/
+label{
+    position: relative;
+    width: 100px;
+    height: 40px;
+}
+
+.checkUno{
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+/**********************      barra span     *************************/
+/***********************************************************************/
+/*span inicial*/
+.spanUno{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-radius: 29px;
+    background: #fe0000;    
+    transition: 0.5s;
+    box-shadow: 0 15px 25px #fe0000;
+}
+/*span con check*/
+.checkUno:checked ~ .spanUno
+{
+    background: #05be05;
+    box-shadow: 0 15px 25px #05be05;
+}
+
+/**********************      barra circular     *************************/
+/***********************************************************************/
+/*estado normal sin check*/
+.spanUno i{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 34px;
+    height: 34px;
+    background: white;
+    border-radius:  50%;
+    transition: 0.5s;
+}
+/*despues de dar check se mueve adelante el circulo*/
+.checkUno:checked ~ .spanUno i{
+    position: absolute;
+    top: 3px;
+    left: 62px;
+    width: 34px;
+    height: 34px;
+    background: white;
+    border-radius:  50%;
+    transition: 0.5s;
+}
+
+/**********************      ojos     *************************/
+/***********************************************************************/
+.spanUno i::before{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+    top: 9px;
+    left: 3px;
+    border-radius: 50%;
+	background: #fe0000;
+
+	box-shadow: 18px 0 #fe0000;
+	transition: 0.5s;
+}
+
+.checkUno:checked ~ .spanUno i::before{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+    top: 9px;
+    left: 3px;
+	background: #05be05;
+	/*ojo derecho*/
+	box-shadow: 18px 0 0 #05be05;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+/**********************      boca     *************************/
+/***********************************************************************/
+.spanUno i::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 4px;
+    top: 23px;
+    left: 10px;
+	background: #fe0000;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+
+.checkUno:checked ~ .spanUno i::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 6px;
+    top: 23px;
+    left: 10px;
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+	background: #05be05;
+	transition: 0.5s;
+}

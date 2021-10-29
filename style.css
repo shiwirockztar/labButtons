@@ -1,0 +1,54 @@
+
+h1{
+    text-align: center;
+    font-style: gobold holow;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+body{
+    margin: auto;
+    padding: auto;
+    background: slategrey;
+    background: #b115ca;
+    /*background:#202124;*/
+}
+.container{
+    position: relative;
+    top: 55px;
+    margin: auto;
+    padding: 0px;
+    width: 80vw;
+    /* width: 1000px; */
+    height: 80vh;
+    background: #b115ca;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 25px;
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    background: aqua;
+    border-radius: 18px;
+}
+
+/*------------------------ primer cuadro -------------------*/
+/*---------------------------------------------------------------*/
+
+.item:hover:nth-child(1){
+    background: #efefef;
+    /*background: #b115ca;*/
+    /*border: 2px solid #5f6368;*/
+}
+
+
+
