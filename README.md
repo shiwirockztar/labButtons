@@ -1,10 +1,18 @@
 # flex-lab
 
-a litle flex exercises practice. usually this job works like template for next projects
-page dominion:  https://shiwirockztar.github.io/flex-lab/
+start to the begins of the practice. her star a series of projects about buttons animation
+page dominion:  https://shiwirockztar.github.io/labButtons/
 
 page instruction:
--se crea la rama gh-pages necesaria para que github la reconosca como la pagina web (rama)
+- git add .
+- git commit -m "font change to gobold"
+- git branch -M principal
+- git remote add origin https://github.com/shiwirockztar/labButtons.git
+- git push -u origin principal
 
--setings and git hub pages estara el link
+
+100% (2/2), done.
+
+
+
 
