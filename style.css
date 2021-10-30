@@ -9,6 +9,8 @@ h1{
     font-family: 'Roboto Slab', serif;
     font-family: gobold;
     color: white;
+    margin-block-start: 0.60em;
+    margin-block-end: 0.60em;
 }
 body{
     margin: auto;
@@ -16,6 +18,9 @@ body{
     background: slategrey;
     background: #b115ca;
     /*background:#202124;*/
+    background-color: #b115ca; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #b115ca, blue);
+    height: 100vh;
 }
 .container{
     position: relative;
