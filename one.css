@@ -21,8 +21,8 @@ label{
 .spanUno{
     position: absolute;
     margin: auto;
-    top: 0px;
-    left: 0px;
+    top: -1vw;
+    left: -5vw;
     width: 11vw;
     height: 5.45vh;
     height: 2.9vw;
@@ -45,10 +45,10 @@ label{
 /*estado normal sin check*/
 .spanUno i{
     position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 36px;
-    height: 36px;
+    top: 0.3vw;
+    left: 0.4vw;
+    width: 2.4vw;
+    height: 2.4vw;
     background: white;
     border-radius:  50%;
     transition: 0.25s;
@@ -56,10 +56,10 @@ label{
 /*despues de dar check se mueve adelante el circulo*/
 .checkUno:checked ~ .spanUno i{
     position: absolute;
-    top: 4px;
-    left: 124px;
-    width: 36px;
-    height: 36px;
+    top: 0.3vw;
+    left: 8.2vw;
+    width: 2.4vw;
+    height: 2.4vw;
     background: white;
     border-radius:  50%;
     transition: 0.25s;
@@ -70,27 +70,27 @@ label{
 .spanUno i::before{
 	content: "";
 	position: absolute;
-	width: 10px;
-	height: 10px;
-    top: 9px;
-    left: 3px;
+	width: 0.67vw;
+	height: 0.67vw;
+    top: 0.6vw;
+    left: 0.2vw;
     border-radius: 50%;
 	background: #fe0000;
 
-	box-shadow: 18px 0 #fe0000;
+	box-shadow: 1.2vw 0 #fe0000;
 	transition: 0.25s;
 }
 
 .checkUno:checked ~ .spanUno i::before{
 	content: "";
 	position: absolute;
-	width: 10px;
-	height: 10px;
-    top: 9px;
-    left: 3px;
+	width: 0.67vw;
+	height: 0.67vw;
+    top: 0.6vw;
+    left: 0.2vw;
 	background: #05be05;
 	/*ojo derecho*/
-	box-shadow: 18px 0 0 #05be05;
+	box-shadow: 1.2vw 0 0 #05be05;
     border-radius: 50%;
     transition: 0.25s;
 
@@ -101,10 +101,10 @@ label{
 .spanUno i::after{
 	content: "";
 	position: absolute;
-	width: 14px;
-	height: 4px;
-    top: 23px;
-    left: 10px;
+	width: 1vw;
+	height: 0.3vw;
+    top: 1.6vw;
+    left: 0.7vw;
 	background: #fe0000;
 	border-radius: 4px;
 	transition: 0.25s;
@@ -113,13 +113,13 @@ label{
 .checkUno:checked ~ .spanUno i::after{
 	content: "";
 	position: absolute;
-	width: 14px;
-	height: 6px;
-    top: 23px;
-    left: 10px;
+	width: 1vw;
+	height: 0.4vw;
+    top: 1.6vw;
+    left: 0.7vw;
     border-radius: 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
 	background: #05be05;
 	transition: 0.25s;
 }
