@@ -31,13 +31,14 @@ body{
     margin: auto;
     padding: 0px;
     width: 80vw;
-    /* width: 1000px; */
     height: 79vh;
     background-color: rgba(255, 255, 255,0.2);
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-evenly;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
 
     backdrop-filter: blur(20px);
     border: solid 1px rgba(255, 255, 255,0.5) ;
@@ -48,10 +49,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 25px 25px;
-    width: 200px;
-    min-width: 200px;
-    height: 200px;
+
+    margin: 20px;
+    height: 165px;
     background: aqua;
     border-radius: 18px;
 }
@@ -71,5 +71,9 @@ body{
     /*border: 2px solid #5f6368;*/
 }
 
-
+.boton{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
 

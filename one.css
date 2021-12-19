@@ -4,6 +4,7 @@
 /*label necesario por que es el que se toca para el cambio*/
 label{
     position: relative;
+    margin: auto;
     width: 100px;
     height: 40px;
 }
@@ -19,10 +20,13 @@ label{
 /*span inicial*/
 .spanUno{
     position: absolute;
+    margin: auto;
     top: 0px;
-    left: -33px;
-    width: 165%;
-    height: 109%;
+    left: 0px;
+    width: 11vw;
+    height: 5.45vh;
+    height: 2.9vw;
+
     border-radius: 50%;
     border-radius: 23px;
     background: #fe0000;    
