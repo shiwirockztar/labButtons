@@ -51,6 +51,7 @@ body{
     justify-content: center;
 
     margin: 20px;
+    min-width: 100px;
     height: 165px;
     background: aqua;
     border-radius: 18px;
